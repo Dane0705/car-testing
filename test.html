@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("./img/bg.png");
+            background-size: cover;
+            background-color: #6f0cf6;
+        }
+        .box{
+            position: relative;
+        }
+        .car{
+            width: 100px;
+            animation: a02 5s infinite ;
+        }
+        .car-fa{
+            position: absolute;
+            top: -12px;
+            right: -80px;
+            animation: a01 .2s infinite;
+        }
+        @keyframes a01{
+            from{
+                transform: translateY(1px);
+            }
+            to{
+                transform: translateY(-1px);
+            }
+        }
+        @keyframes a02{
+            from{
+                transform: translateY(1px) ;
+            }
+            to{
+                transform: translateY(-1px);
+                transform: translateX(-605px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/主標.png" alt="" style="width: 100%;margin-top: -10px;">
+    <div class="box">
+        <div class="car-fa">
+            <img src="./img/car.png" alt="" class="car">
+        </div>
+        <img src="./img/free-shipping.png" alt="" class="free-shipping" style="width:100% ; margin-top: 32px;">
+    </div>
+</body>
+</html>
